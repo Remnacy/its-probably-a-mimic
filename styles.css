@@ -1290,227 +1290,77 @@ img {
 
 
 /* =================================
-   FINDS TABLETOP ART
+   FINDS PAGE — REAL IMAGE ART
 ================================= */
+
+/*
+   These three cards now use the actual artwork
+   instead of CSS-generated illustrations.
+
+   Required image files:
+
+   tabletop-dice-gear.png
+   gaming-setup-finds.png
+   rpg-campaign-finds.png
+*/
+
+.tabletop-art,
+.gaming-art,
+.rpg-art {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* TABLETOP */
 
 .tabletop-art {
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(164,52,255,.35),
-            transparent 62%
-        ),
+    background-image:
         linear-gradient(
-            135deg,
-            #25132c,
-            #100b13
-        );
-}
-
-.dice-cluster {
-    position: relative;
-    width: 220px;
-    height: 210px;
-}
-
-.die {
-    position: absolute;
-    display: grid;
-    place-items: center;
-    color: white;
-    font-weight: 900;
-    text-shadow: 0 2px 4px rgba(0,0,0,.35);
-    background: linear-gradient(145deg, #8b35d5, #48167c);
-    box-shadow:
-        0 20px 35px rgba(0,0,0,.35),
-        inset 0 0 15px rgba(255,255,255,.12);
-}
-
-.d20 {
-    width: 105px;
-    height: 105px;
-    left: 45px;
-    top: 50px;
-    clip-path: polygon(
-        50% 0%,
-        93% 25%,
-        93% 75%,
-        50% 100%,
-        7% 75%,
-        7% 25%
-    );
-    font-size: 1.8rem;
-}
-
-.d12 {
-    width: 75px;
-    height: 75px;
-    right: 0;
-    top: 5px;
-    clip-path: polygon(
-        50% 0%,
-        95% 25%,
-        80% 90%,
-        20% 90%,
-        5% 25%
-    );
-    font-size: 1.1rem;
-}
-
-.d8 {
-    width: 70px;
-    height: 70px;
-    left: 0;
-    bottom: 5px;
-    clip-path: polygon(
-        50% 0%,
-        100% 50%,
-        50% 100%,
-        0% 50%
-    );
-}
-
-.d6 {
-    width: 70px;
-    height: 70px;
-    right: 10px;
-    bottom: 0;
-    border-radius: 15px;
-    transform: rotate(13deg);
+            rgba(16,11,18,.04),
+            rgba(16,11,18,.04)
+        ),
+        url("tabletop-dice-gear.png");
 }
 
 
-/* =================================
-   FINDS GAMING ART
-================================= */
+/* GAMING */
 
 .gaming-art {
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(164,52,255,.27),
-            transparent 62%
-        ),
+    background-image:
         linear-gradient(
-            135deg,
-            #17122a,
-            #0b0d17
-        );
-}
-
-.gaming-setup-art {
-    position: relative;
-    width: 260px;
-    height: 230px;
-}
-
-.gaming-setup-art .monitor {
-    width: 180px;
-    height: 110px;
-    margin: auto;
-    border: 10px solid #171527;
-    border-radius: 8px;
-    background:
-        radial-gradient(
-            circle,
-            #9d3cff,
-            #34124b 65%
-        );
-    box-shadow:
-        0 0 45px rgba(157,60,255,.55);
-}
-
-.gaming-setup-art .monitor::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 12px;
-    left: 105px;
-    top: 125px;
-    background: #1c1724;
-}
-
-.gaming-setup-art .keyboard {
-    position: absolute;
-    left: 15px;
-    bottom: 20px;
-    width: 185px;
-    padding: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    border-radius: 8px;
-    transform: skew(-10deg);
-    background: #171527;
-}
-
-.gaming-setup-art .keyboard i {
-    width: 20px;
-    height: 11px;
-    border-radius: 3px;
-    background: #8430b6;
-}
-
-.mouse {
-    position: absolute;
-    right: 5px;
-    bottom: 22px;
-    width: 48px;
-    height: 68px;
-    border-radius: 50% 50% 45% 45%;
-    background: #241d32;
-    border: 2px solid #8430b6;
+            rgba(16,11,18,.04),
+            rgba(16,11,18,.04)
+        ),
+        url("gaming-setup-finds.png");
 }
 
 
-/* =================================
-   FINDS RPG ART
-================================= */
+/* RPG */
 
 .rpg-art {
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(128,44,214,.42),
-            transparent 60%
-        ),
+    background-image:
         linear-gradient(
-            135deg,
-            #21112d,
-            #0b0910
-        );
+            rgba(16,11,18,.04),
+            rgba(16,11,18,.04)
+        ),
+        url("rpg-campaign-finds.png");
 }
 
-.rpg-scroll {
-    width: 230px;
-    height: 160px;
-    padding: 35px 20px;
-    text-align: center;
-    transform: rotate(-4deg);
-    background: linear-gradient(
-        135deg,
-        #a94e3f,
-        #71372e
-    );
-    border: 5px solid #4b251f;
-    box-shadow: 0 20px 35px rgba(0,0,0,.35);
-}
 
-.rpg-scroll span {
-    display: block;
-    color: var(--gold);
-    font-size: 2rem;
-}
+/*
+   Hide the old CSS-generated artwork inside
+   the three Finds cards.
 
-.rpg-scroll strong {
-    display: block;
-    color: #e8dfc5;
-    font-size: 2rem;
-}
+   The HTML can stay as-is.
+*/
 
-.rpg-scroll small {
-    color: #e8dfc5;
-    letter-spacing: .15em;
+.tabletop-art .dice-cluster,
+.gaming-art .gaming-setup-art,
+.rpg-art .rpg-scroll {
+    display: none;
 }
 
 
