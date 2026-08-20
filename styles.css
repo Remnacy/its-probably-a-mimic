@@ -2,7 +2,6 @@
   --bg: #100b12;
   --bg-soft: #17101a;
   --panel: #24122b;
-  --panel-light: #30163a;
   --purple: #a63cff;
   --purple-bright: #b54cff;
   --gold: #e6a51a;
@@ -46,29 +45,37 @@ a {
 ========================= */
 
 .site-header {
-  min-height: 118px;
-  padding: 18px clamp(24px, 7vw, 120px);
+  height: 105px;
+  padding: 12px clamp(24px, 6vw, 100px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 30px;
   background: #100b12;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
   z-index: 10;
 }
 
+/* THIS controls the actual Mimic logo */
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
   min-width: 0;
+  height: 80px;
+}
+
+.brand img {
+  display: block;
+  width: 125px;
+  height: 80px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .brand-logo {
-  width: 105px;
-  height: auto;
-  display: block;
+  width: 125px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -92,7 +99,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(24px, 3vw, 48px);
+  gap: clamp(22px, 3vw, 42px);
   margin-left: auto;
 }
 
@@ -113,7 +120,7 @@ nav a:hover {
 .header-cta {
   border: 1px solid var(--gold);
   border-radius: 999px;
-  padding: 11px 22px;
+  padding: 10px 20px;
   color: var(--gold);
   font-weight: 800;
   transition:
@@ -517,12 +524,18 @@ footer p {
 
 @media (max-width: 900px) {
   .site-header {
-    min-height: 92px;
-    padding: 14px 24px;
+    height: 90px;
+    padding: 10px 24px;
   }
 
+  .brand {
+    height: 70px;
+  }
+
+  .brand img,
   .brand-logo {
-    width: 82px;
+    width: 95px;
+    height: 70px;
   }
 
   nav {
@@ -558,12 +571,18 @@ footer p {
 
 @media (max-width: 620px) {
   .site-header {
-    min-height: 78px;
-    padding: 12px 18px;
+    height: 75px;
+    padding: 8px 18px;
   }
 
+  .brand {
+    height: 60px;
+  }
+
+  .brand img,
   .brand-logo {
-    width: 70px;
+    width: 72px;
+    height: 60px;
   }
 
   .brand span:last-child {
