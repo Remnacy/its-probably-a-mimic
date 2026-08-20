@@ -37,6 +37,10 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -47,12 +51,12 @@ a {
 ========================= */
 
 .site-header {
-  height: 105px;
-  padding: 12px clamp(24px, 6vw, 100px);
+  min-height: 92px;
+  padding: 8px clamp(24px, 5vw, 80px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 24px;
   background: #100b12;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
@@ -63,21 +67,17 @@ a {
   display: flex;
   align-items: center;
   min-width: 0;
-  height: 80px;
+  height: 76px;
+  flex-shrink: 0;
 }
 
-.brand img {
-  display: block;
-  width: 125px;
-  height: 80px;
-  object-fit: contain;
-  object-position: left center;
-}
-
+.brand img,
 .brand-logo {
-  width: 125px;
-  height: 80px;
+  display: block;
+  width: 105px;
+  height: 68px;
   object-fit: contain;
+  object-position: center;
 }
 
 .brand-mark {
@@ -100,8 +100,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(22px, 3vw, 42px);
+  gap: clamp(18px, 2.5vw, 34px);
   margin-left: auto;
+  flex-shrink: 0;
 }
 
 nav a {
@@ -121,9 +122,11 @@ nav a:hover {
 .header-cta {
   border: 1px solid var(--gold);
   border-radius: 999px;
-  padding: 10px 20px;
+  padding: 9px 18px;
   color: var(--gold);
   font-weight: 800;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -142,11 +145,11 @@ nav a:hover {
 
 .hero {
   min-height: 610px;
-  padding: 58px clamp(24px, 8vw, 125px) 72px;
+  padding: 70px clamp(24px, 7vw, 105px) 80px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(390px, 0.9fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.82fr);
   align-items: center;
-  gap: clamp(35px, 5vw, 75px);
+  gap: clamp(35px, 5vw, 70px);
   background:
     radial-gradient(
       circle at 80% 45%,
@@ -158,7 +161,9 @@ nav a:hover {
 }
 
 .hero-copy {
-  max-width: 680px;
+  width: 100%;
+  max-width: 690px;
+  min-width: 0;
 }
 
 .eyebrow {
@@ -174,7 +179,7 @@ nav a:hover {
   margin: 0;
   max-width: 680px;
   color: var(--cream);
-  font-size: clamp(4rem, 6.4vw, 6.5rem);
+  font-size: clamp(3.8rem, 6vw, 6rem);
   line-height: 0.9;
   letter-spacing: -0.065em;
   font-weight: 950;
@@ -251,10 +256,12 @@ nav a:hover {
 
 .hero-card {
   width: 100%;
+  max-width: 570px;
   min-width: 0;
-  height: 465px;
+  height: 430px;
+  justify-self: end;
   border: 1px solid var(--border);
-  border-radius: 34px;
+  border-radius: 32px;
   background:
     radial-gradient(
       circle at 50% 42%,
@@ -275,16 +282,16 @@ nav a:hover {
   position: absolute;
   inset: 16px;
   border: 1px solid rgba(255, 255, 255, 0.035);
-  border-radius: 25px;
+  border-radius: 24px;
   pointer-events: none;
 }
 
 .hero-card img {
   display: block;
-  width: 78%;
-  max-width: 430px;
+  width: 58%;
+  max-width: 350px;
   height: auto;
-  max-height: 390px;
+  max-height: 330px;
   object-fit: contain;
   position: relative;
   z-index: 2;
@@ -293,14 +300,14 @@ nav a:hover {
 .hero-card .speech {
   position: absolute;
   right: 18px;
-  bottom: 22px;
-  width: 155px;
-  padding: 16px;
+  bottom: 20px;
+  width: 145px;
+  padding: 15px;
   background: var(--cream);
   color: #25152a;
   border-radius: 5px;
   font-family: Georgia, serif;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   line-height: 1.45;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
   transform: rotate(3deg);
@@ -318,7 +325,7 @@ nav a:hover {
 ========================= */
 
 .section {
-  padding: 100px clamp(24px, 8vw, 125px);
+  padding: 100px clamp(24px, 7vw, 105px);
 }
 
 .section-heading {
@@ -490,7 +497,7 @@ nav a:hover {
 ========================= */
 
 footer {
-  padding: 55px clamp(24px, 8vw, 125px);
+  padding: 55px clamp(24px, 7vw, 105px);
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 25px 50px;
@@ -533,47 +540,31 @@ footer p {
    TABLET
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .site-header {
-    height: 90px;
-    padding: 10px 24px;
-  }
-
-  .brand {
-    height: 70px;
-  }
-
-  .brand img,
-  .brand-logo {
-    width: 95px;
-    height: 70px;
-  }
-
-  nav {
-    gap: 18px;
-  }
-
-  .header-cta {
-    display: none;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .hero {
     grid-template-columns: 1fr;
-    padding-top: 60px;
+    padding-top: 65px;
   }
 
   .hero-copy {
-    max-width: 700px;
+    max-width: 760px;
   }
 
   .hero-card {
+    width: 100%;
+    max-width: 620px;
     height: 430px;
+    justify-self: start;
   }
 
   .hero-card img {
-    width: 70%;
-    max-width: 390px;
-    max-height: 360px;
+    width: 55%;
+    max-width: 350px;
   }
 
   .loot-grid {
@@ -594,20 +585,21 @@ footer p {
    MOBILE
 ========================= */
 
-@media (max-width: 620px) {
+@media (max-width: 700px) {
   .site-header {
-    height: 75px;
-    padding: 8px 18px;
+    min-height: 78px;
+    padding: 7px 18px;
+    gap: 12px;
   }
 
   .brand {
-    height: 60px;
+    height: 62px;
   }
 
   .brand img,
   .brand-logo {
-    width: 72px;
-    height: 60px;
+    width: 78px;
+    height: 58px;
   }
 
   .brand span:last-child {
@@ -619,15 +611,20 @@ footer p {
   }
 
   nav a {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
+  }
+
+  .header-cta {
+    display: none;
   }
 
   .hero {
-    padding: 48px 20px 65px;
+    padding: 55px 20px 65px;
+    gap: 45px;
   }
 
   .hero h1 {
-    font-size: clamp(3.5rem, 16vw, 5rem);
+    font-size: clamp(3.3rem, 15vw, 5rem);
   }
 
   .hero-text {
@@ -635,20 +632,21 @@ footer p {
   }
 
   .hero-card {
-    height: 350px;
+    height: 360px;
     border-radius: 24px;
   }
 
   .hero-card img {
-    width: 82%;
-    max-height: 290px;
+    width: 65%;
+    max-width: 300px;
+    max-height: 275px;
   }
 
   .hero-card .speech {
     right: 8px;
     bottom: 18px;
-    width: 145px;
-    font-size: 0.9rem;
+    width: 135px;
+    font-size: 0.86rem;
   }
 
   .section {
@@ -666,5 +664,33 @@ footer p {
 
   .footer-links {
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    gap: 9px;
+  }
+
+  nav a {
+    font-size: 0.68rem;
+  }
+
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-card {
+    height: 320px;
+  }
+
+  .hero-card img {
+    width: 68%;
+  }
+
+  .hero-card .speech {
+    width: 125px;
+    padding: 12px;
   }
 }
