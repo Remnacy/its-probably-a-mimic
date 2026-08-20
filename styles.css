@@ -52,7 +52,7 @@ a {
 
 .site-header {
   min-height: 92px;
-  padding: 8px clamp(24px, 5vw, 80px);
+  padding: 7px clamp(24px, 5vw, 80px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,15 +67,15 @@ a {
   display: flex;
   align-items: center;
   min-width: 0;
-  height: 76px;
+  height: 78px;
   flex-shrink: 0;
 }
 
 .brand img,
 .brand-logo {
   display: block;
-  width: 105px;
-  height: 68px;
+  width: 135px;
+  height: 76px;
   object-fit: contain;
   object-position: center;
 }
@@ -286,38 +286,69 @@ nav a:hover {
   pointer-events: none;
 }
 
+/* Mimic artwork */
 .hero-card img {
   display: block;
-  width: 58%;
-  max-width: 350px;
+  width: 61%;
+  max-width: 365px;
   height: auto;
-  max-height: 330px;
+  max-height: 345px;
   object-fit: contain;
   position: relative;
   z-index: 2;
+  transform: translateY(-18px);
 }
+
+/* =========================
+   MIMIC NOTE
+========================= */
 
 .hero-card .speech {
   position: absolute;
-  right: 18px;
-  bottom: 20px;
-  width: 145px;
-  padding: 15px;
-  background: var(--cream);
-  color: #25152a;
-  border-radius: 5px;
-  font-family: Georgia, serif;
-  font-size: 0.92rem;
-  line-height: 1.45;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-  transform: rotate(3deg);
+  right: 20px;
+  bottom: 18px;
+  width: 148px;
+  min-height: 145px;
+  padding: 18px 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(
+      145deg,
+      #fff5d9 0%,
+      #f5dfb3 100%
+    );
+  color: #2a192e;
+  border: 1px solid rgba(80, 45, 20, 0.18);
+  border-radius: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    3px 4px 0 rgba(0, 0, 0, 0.08);
+  transform: rotate(4deg);
   z-index: 4;
+}
+
+.hero-card .speech::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 16px;
+  width: 32px;
+  height: 12px;
+  background: rgba(230, 165, 26, 0.55);
+  transform: rotate(-4deg);
+  opacity: 0.75;
 }
 
 .hero-card .speech strong,
 .hero-card .speech span {
   color: var(--purple);
   font-weight: 900;
+  font-size: 1.35rem;
 }
 
 /* =========================
@@ -598,8 +629,8 @@ footer p {
 
   .brand img,
   .brand-logo {
-    width: 78px;
-    height: 58px;
+    width: 88px;
+    height: 60px;
   }
 
   .brand span:last-child {
@@ -640,13 +671,21 @@ footer p {
     width: 65%;
     max-width: 300px;
     max-height: 275px;
+    transform: translateY(-12px);
   }
 
   .hero-card .speech {
     right: 8px;
     bottom: 18px;
     width: 135px;
+    min-height: 135px;
+    padding: 15px;
     font-size: 0.86rem;
+  }
+
+  .hero-card .speech strong,
+  .hero-card .speech span {
+    font-size: 1.2rem;
   }
 
   .section {
@@ -691,6 +730,7 @@ footer p {
 
   .hero-card .speech {
     width: 125px;
+    min-height: 125px;
     padding: 12px;
   }
 }
