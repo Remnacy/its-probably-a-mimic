@@ -1,474 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Finds | It's Probably a Mimic</title>
+<meta name="description" content="It's Probably a Mimic — gaming gear, tabletop treasures, useful tools, ridiculous gifts, and suspiciously good finds.">
 
-    <meta
-        name="description"
-        content="Gaming gear, tabletop treasures, useful tools, ridiculous gifts, and suspiciously good finds for gamers and adventurers."
-    >
+<title>It's Probably a Mimic | Gaming Loot Worth Finding</title>
 
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- ==============================
-         HEADER
-    =============================== -->
+<header class="site-header">
+  <a class="brand" href="#">
+    <img src="mimic-logo.png" alt="It's Probably a Mimic">
+  </a>
 
-    <header class="site-header">
-        <div class="header-inner">
+  <nav class="main-nav">
+    <a href="#loot">Finds</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">About Mimic</a>
+    <a class="nav-cta" href="#categories">Open the Chest</a>
+  </nav>
+</header>
 
-            <a href="index.html" class="brand" aria-label="It's Probably a Mimic home">
-                <img
-                    src="mimic-logo.png"
-                    alt="It's Probably a Mimic"
-                    class="brand-logo"
-                >
-            </a>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="finds.html">Finds</a>
-                <a href="#categories">Categories</a>
-                <a href="#about">About Mimic</a>
-                <a href="#categories">Open the Chest</a>
-            </nav>
+<main>
 
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-copy">
+
+      <p class="eyebrow">IT'S PROBABLY A MIMIC</p>
+
+      <h1>
+        Finding the<br>
+        <span>good stuff.</span>
+      </h1>
+
+      <p class="hero-text">
+        Gaming gear, tabletop treasures, useful tools, ridiculous gifts,
+        and suspiciously good finds for gamers and adventurers.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#loot">Show Me the Loot</a>
+        <a class="button secondary" href="#categories">Explore the Hoard</a>
+      </div>
+
+      <p class="hero-note">
+        We find it. You decide if it's worth it.
+      </p>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+      <img
+        class="hero-mimic"
+        src="mimic-logo.png"
+        alt="It's Probably a Mimic mascot"
+      >
+
+      <div class="mimic-note">
+        <span>Shiny?</span>
+        <span>Useful?</span>
+        <span>Suspicious?</span>
+        <strong>YES.</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAVORITES -->
+  <section id="loot" class="section loot-section">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">MIMIC'S FAVORITES</p>
+
+      <h2>
+        Loot worth opening the
+        chest for.
+      </h2>
+
+      <p>
+        We're building this collection around things gamers actually use —
+        not random junk with a purple button.
+      </p>
+
+    </div>
+
+
+    <div class="treasure-divider">
+      <span></span>
+      <div class="treasure-icon">▰</div>
+      <span></span>
+    </div>
+
+
+    <div class="loot-grid">
+
+      <!-- TABLETOP -->
+      <article class="loot-card tabletop-card">
+
+        <div class="loot-image tabletop-image">
+          <img
+            src="tabletop-dice-gear.png"
+            alt="Tabletop dice and game night gear"
+          >
         </div>
-    </header>
 
-
-    <main>
-
-        <!-- ==============================
-             PAGE HERO
-        =============================== -->
-
-        <section class="finds-hero section">
-
-            <div class="container">
-
-                <div class="section-kicker">
-                    MIMIC'S FAVORITES
-                </div>
-
-                <h1>
-                    Loot worth opening the
-                    <br>
-                    chest for.
-                </h1>
-
-                <p class="hero-copy">
-                    We're building this collection around things gamers actually use —
-                    not random junk with a purple button.
-                </p>
-
-                <div class="section-divider">
-                    <span></span>
-                    <b>◆</b>
-                    <span></span>
-                </div>
-
-
-                <!-- ==============================
-                     FIND CARDS
-                =============================== -->
-
-                <div class="find-grid" id="categories">
-
-
-                    <!-- TABLETOP -->
-
-                    <article class="find-card">
-
-                        <div class="find-card-image">
-                            <img
-                                src="tabletop-dice-gear.png"
-                                alt="Tabletop dice and game night gear"
-                                loading="eager"
-                            >
-                        </div>
-
-                        <div class="find-card-content">
-
-                            <div class="find-card-category">
-                                ◆ &nbsp; TABLETOP
-                            </div>
-
-                            <h2>
-                                Dice &amp; Game Night Gear
-                            </h2>
-
-                            <p>
-                                Premium dice, trays, towers, storage, and the
-                                little upgrades that make game night legendary.
-                            </p>
-
-                            <a
-                                href="https://fanrolldice.com/itsprobablyamimic"
-                                target="_blank"
-                                rel="noopener noreferrer sponsored"
-                                class="find-card-link"
-                            >
-                                See the loot
-                                <span>→</span>
-                            </a>
-
-
-                            <!-- AFFILIATE PARTNER -->
-
-                            <a
-                                href="https://fanrolldice.com/itsprobablyamimic"
-                                target="_blank"
-                                rel="noopener noreferrer sponsored"
-                                class="partner-perk"
-                            >
-                                <span class="perk-label">
-                                    MIMIC PARTNER PERK
-                                </span>
-
-                                <strong>
-                                    FanRoll Dice
-                                </strong>
-
-                                <span>
-                                    Use code <b>MIMIC10</b> for your Mimic perk.
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- GAMING -->
-
-                    <article class="find-card">
-
-                        <div class="find-card-image">
-                            <img
-                                src="gaming-setup-finds.png"
-                                alt="Gaming setup with PC, keyboard, headset, monitor, and accessories"
-                                loading="eager"
-                            >
-                        </div>
-
-                        <div class="find-card-content">
-
-                            <div class="find-card-category">
-                                ✦ &nbsp; GAMING
-                            </div>
-
-                            <h2>
-                                Gaming Setup Finds
-                            </h2>
-
-                            <p>
-                                Accessories and upgrades for the desk, console,
-                                PC, and everything around them.
-                            </p>
-
-                            <a
-                                href="https://minva-tabletop-design-co.myshopify.com/?ref=MIMIC"
-                                target="_blank"
-                                rel="noopener noreferrer sponsored"
-                                class="find-card-link"
-                            >
-                                See the loot
-                                <span>→</span>
-                            </a>
-
-
-                            <!-- AFFILIATE PARTNER -->
-
-                            <a
-                                href="https://minva-tabletop-design-co.myshopify.com/?ref=MIMIC"
-                                target="_blank"
-                                rel="noopener noreferrer sponsored"
-                                class="partner-perk"
-                            >
-                                <span class="perk-label">
-                                    MIMIC PARTNER PERK
-                                </span>
-
-                                <strong>
-                                    Minva Tabletop Design Co.
-                                </strong>
-
-                                <span>
-                                    Shop through Mimic with code <b>MIMIC</b>.
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- RPG -->
-
-                    <article class="find-card">
-
-                        <div class="find-card-image">
-                            <img
-                                src="rpg-campaign-finds.png"
-                                alt="Tabletop RPG campaign gear, miniatures, books, maps, and accessories"
-                                loading="eager"
-                            >
-                        </div>
-
-                        <div class="find-card-content">
-
-                            <div class="find-card-category">
-                                ✧ &nbsp; RPG
-                            </div>
-
-                            <h2>
-                                For Your Next Campaign
-                            </h2>
-
-                            <p>
-                                Character-building essentials, GM tools,
-                                accessories, and suspiciously useful extras.
-                            </p>
-
-                            <a
-                                href="https://baileywiki.com/?fpr=i6c6bt"
-                                target="_blank"
-                                rel="noopener noreferrer sponsored"
-                                class="find-card-link"
-                            >
-                                See the loot
-                                <span>→</span>
-                            </a>
-
-
-                            <!-- AFFILIATE PARTNER -->
-
-                            <a
-                                href="https://baileywiki.com/?fpr=i6c6bt"
-                                target="_blank"
-                                rel="noopener noreferrer sponsored"
-                                class="partner-perk"
-                            >
-                                <span class="perk-label">
-                                    MIMIC PARTNER PERK
-                                </span>
-
-                                <strong>
-                                    Baileywiki
-                                </strong>
-
-                                <span>
-                                    Explore Baileywiki through the Mimic.
-                                </span>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==============================
-             OPEN THE CHEST
-        =============================== -->
-
-        <section class="chest-section section">
-
-            <div class="container">
-
-                <div class="section-kicker">
-                    OPEN THE CHEST
-                </div>
-
-                <h2 class="section-title">
-                    What are you hunting for?
-                </h2>
-
-                <p class="section-subtitle">
-                    Pick your path. The Mimic has been digging through the hoard.
-                </p>
-
-
-                <div class="category-grid">
-
-                    <a href="#tabletop" class="category-card">
-                        <span class="category-icon">◆</span>
-
-                        <div>
-                            <strong>Tabletop &amp; RPG</strong>
-                            <span>Dice, accessories, campaign gear</span>
-                        </div>
-
-                        <span class="category-arrow">→</span>
-                    </a>
-
-
-                    <a href="#gaming" class="category-card">
-                        <span class="category-icon">✦</span>
-
-                        <div>
-                            <strong>Gaming Setup</strong>
-                            <span>PC, console, desk upgrades</span>
-                        </div>
-
-                        <span class="category-arrow">→</span>
-                    </a>
-
-
-                    <a href="#audio" class="category-card">
-                        <span class="category-icon">◎</span>
-
-                        <div>
-                            <strong>Headsets &amp; Audio</strong>
-                            <span>Hear every suspicious footstep</span>
-                        </div>
-
-                        <span class="category-arrow">→</span>
-                    </a>
-
-
-                    <a href="#comfort" class="category-card">
-                        <span class="category-icon">▣</span>
-
-                        <div>
-                            <strong>Desk &amp; Comfort</strong>
-                            <span>Make your gaming lair better</span>
-                        </div>
-
-                        <span class="category-arrow">→</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==============================
-             ABOUT
-        =============================== -->
-
-        <section class="about-section section" id="about">
-
-            <div class="container">
-
-                <div class="about-grid">
-
-                    <div>
-
-                        <div class="section-kicker">
-                            ABOUT THE MIMIC
-                        </div>
-
-                        <h2>
-                            Not everything
-                            <br>
-                            shiny is treasure.
-                        </h2>
-
-                    </div>
-
-
-                    <div class="about-copy">
-
-                        <p>
-                            It's Probably a Mimic is a gaming discovery brand
-                            built for people who love games and hate wasting
-                            money on stuff that looked cool for five minutes.
-                        </p>
-
-                        <p>
-                            We hunt down interesting gaming gear and tabletop
-                            finds, then let you decide whether they belong
-                            in your inventory.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ==============================
-         FOOTER
-    =============================== -->
-
-    <footer class="site-footer">
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <div>
-
-                    <h3>
-                        It's Probably a Mimic
-                    </h3>
-
-                    <p>
-                        Your next favorite gaming find might be hiding in here.
-                    </p>
-
-                </div>
-
-
-                <nav class="social-links" aria-label="Social media">
-
-                    <a
-                        href="#"
-                        aria-label="TikTok"
-                    >
-                        TikTok
-                    </a>
-
-                    <a
-                        href="#"
-                        aria-label="Instagram"
-                    >
-                        Instagram
-                    </a>
-
-                    <a
-                        href="#"
-                        aria-label="Pinterest"
-                    >
-                        Pinterest
-                    </a>
-
-                </nav>
-
-            </div>
-
-
-            <div class="affiliate-disclosure">
-
-                Some links on this site may be affiliate links.
-                If you buy through one, we may earn a commission
-                at no extra cost to you.
-
-            </div>
+        <div class="loot-content">
+
+          <div class="loot-label">
+            <span class="loot-symbol">◆</span>
+            <span>TABLETOP</span>
+          </div>
+
+          <h3>Dice &amp; Game Night Gear</h3>
+
+          <p>
+            Premium dice, trays, towers, storage, and the little upgrades
+            that make game night legendary.
+          </p>
+
+          <a
+            href="https://fanrolldice.com/itsprobablyamimic"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See the loot <span>→</span>
+          </a>
 
         </div>
 
-    </footer>
+      </article>
 
+
+      <!-- GAMING -->
+      <article class="loot-card gaming-card">
+
+        <div class="loot-image gaming-image">
+          <img
+            src="gaming-setup-finds.png"
+            alt="Gaming setup gear"
+          >
+        </div>
+
+        <div class="loot-content">
+
+          <div class="loot-label">
+            <span class="loot-symbol">✦</span>
+            <span>GAMING</span>
+          </div>
+
+          <h3>Gaming Setup Finds</h3>
+
+          <p>
+            Accessories and upgrades for the desk, console, PC,
+            and everything around them.
+          </p>
+
+          <a
+            href="#categories"
+            class="text-link"
+          >
+            See the loot <span>→</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- RPG -->
+      <article class="loot-card rpg-card">
+
+        <div class="loot-image rpg-image">
+          <img
+            src="rpg-campaign-finds.png"
+            alt="Tabletop RPG campaign gear"
+          >
+        </div>
+
+        <div class="loot-content">
+
+          <div class="loot-label">
+            <span class="loot-symbol">✧</span>
+            <span>RPG</span>
+          </div>
+
+          <h3>For Your Next Campaign</h3>
+
+          <p>
+            Character-building essentials, GM tools, accessories,
+            and suspiciously useful extras.
+          </p>
+
+          <a
+            href="https://minva-tabletop-design-co.myshopify.com/?ref=MIMIC"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See the loot <span>→</span>
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <div class="section-transition">
+
+      <span></span>
+      <div>✦</div>
+      <span></span>
+
+    </div>
+
+  </section>
+
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="section categories-section">
+
+    <div class="section-heading centered">
+
+      <p class="eyebrow">OPEN THE CHEST</p>
+
+      <h2>What are you hunting for?</h2>
+
+      <p>
+        Pick your path. The Mimic has been digging through the hoard.
+      </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">◆</div>
+        <div>
+          <strong>Tabletop &amp; RPG</strong>
+          <span>Dice, accessories, campaign gear</span>
+        </div>
+        <b>→</b>
+      </a>
+
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">✦</div>
+        <div>
+          <strong>Gaming Setup</strong>
+          <span>PC, console, desk upgrades</span>
+        </div>
+        <b>→</b>
+      </a>
+
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">◉</div>
+        <div>
+          <strong>Headsets &amp; Audio</strong>
+          <span>Hear every suspicious footstep</span>
+        </div>
+        <b>→</b>
+      </a>
+
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">▣</div>
+        <div>
+          <strong>Desk &amp; Comfort</strong>
+          <span>Make your gaming lair better</span>
+        </div>
+        <b>→</b>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+
+    <div class="about-heading">
+
+      <p class="eyebrow">ABOUT THE MIMIC</p>
+
+      <h2>
+        Not everything shiny
+        is treasure.
+      </h2>
+
+    </div>
+
+    <div class="about-copy">
+
+      <p>
+        It's Probably a Mimic is a gaming discovery brand built for
+        people who love games and hate wasting money on stuff that
+        looked cool for five minutes.
+      </p>
+
+      <p>
+        We hunt down interesting gaming gear and tabletop finds,
+        then let you decide whether they belong in your inventory.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-brand">
+
+    <strong>It's Probably a Mimic</strong>
+
+    <p>
+      Your next favorite gaming find might be hiding in here.
+    </p>
+
+  </div>
+
+
+  <div class="footer-links">
+
+    <a href="#">TikTok</a>
+    <a href="#">Instagram</a>
+    <a href="#">Pinterest</a>
+
+  </div>
+
+
+  <p class="disclosure">
+    Some links on this site may be affiliate links.
+    If you buy through one, we may earn a commission at no extra cost to you.
+  </p>
+
+</footer>
 
 </body>
 </html>
