@@ -1825,3 +1825,6 @@ footer {
 .finds-page .rpg-art::before {
     display: none;
 }
+.finds-page {
+    background: red !important;
+}
