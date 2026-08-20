@@ -1,40 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta
-    name="description"
-    content="It's Probably a Mimic — gaming gear, tabletop treasures, useful tools, ridiculous gifts, and suspiciously good finds for gamers and adventurers."
-  >
+<meta name="description" content="It's Probably a Mimic — gaming gear, tabletop treasures, useful tools, ridiculous gifts, and suspiciously good finds.">
 
-  <title>It's Probably a Mimic | Gaming Finds Worth Finding</title>
+<title>It's Probably a Mimic | Gaming Loot Worth Finding</title>
 
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
+  <a class="brand" href="#">
+    <img src="mimic-logo.png" alt="It's Probably a Mimic">
+  </a>
 
-    <a class="brand" href="#">
-      <img
-        src="mimic-logo.png"
-        alt="It's Probably a Mimic"
-        class="brand-logo"
-      >
-    </a>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#loot">Finds</a>
-      <a href="#categories">Categories</a>
-      <a href="#about">About Mimic</a>
-      <a href="#categories" class="nav-chest">Open the Chest</a>
-    </nav>
-
-  </div>
+  <nav class="main-nav">
+    <a href="#loot">Finds</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">About Mimic</a>
+    <a class="nav-cta" href="#categories">Open the Chest</a>
+  </nav>
 </header>
 
 
@@ -48,7 +37,7 @@
       <p class="eyebrow">IT'S PROBABLY A MIMIC</p>
 
       <h1>
-        Finding the
+        Finding the<br>
         <span>good stuff.</span>
       </h1>
 
@@ -58,13 +47,8 @@
       </p>
 
       <div class="hero-actions">
-        <a class="button primary" href="#loot">
-          Show Me the Loot
-        </a>
-
-        <a class="button secondary" href="#categories">
-          Explore the Hoard
-        </a>
+        <a class="button primary" href="#loot">Show Me the Loot</a>
+        <a class="button secondary" href="#categories">Explore the Hoard</a>
       </div>
 
       <p class="hero-note">
@@ -76,21 +60,17 @@
 
     <div class="hero-visual">
 
-      <div class="mimic-stage">
+      <img
+        class="hero-mimic"
+        src="mimic-logo.png"
+        alt="It's Probably a Mimic mascot"
+      >
 
-        <img
-          src="mimic-logo.png"
-          alt="It's Probably a Mimic mascot"
-          class="hero-logo"
-        >
-
-        <div class="mimic-note">
-          <span>Shiny?</span>
-          <span>Useful?</span>
-          <span>Suspicious?</span>
-          <strong>YES.</strong>
-        </div>
-
+      <div class="mimic-note">
+        <span>Shiny?</span>
+        <span>Useful?</span>
+        <span>Suspicious?</span>
+        <strong>YES.</strong>
       </div>
 
     </div>
@@ -98,15 +78,16 @@
   </section>
 
 
-  <!-- LOOT -->
-  <section id="loot" class="section">
+  <!-- FAVORITES -->
+  <section id="loot" class="section loot-section">
 
     <div class="section-heading">
 
       <p class="eyebrow">MIMIC'S FAVORITES</p>
 
       <h2>
-        Loot worth opening the chest for.
+        Loot worth opening the
+        chest for.
       </h2>
 
       <p>
@@ -117,25 +98,47 @@
     </div>
 
 
+    <div class="treasure-divider">
+      <span></span>
+      <div class="treasure-icon">▰</div>
+      <span></span>
+    </div>
+
+
     <div class="loot-grid">
 
-      <article class="loot-card">
+      <!-- TABLETOP -->
+      <article class="loot-card tabletop-card">
 
-        <div class="loot-art">🎲</div>
+        <div class="loot-image tabletop-image">
+          <div class="dice-scene">
+
+            <div class="dice d20">20</div>
+            <div class="dice d12">12</div>
+            <div class="dice d8">8</div>
+            <div class="dice d6">6</div>
+
+            <div class="dice-glow"></div>
+
+          </div>
+        </div>
 
         <div class="loot-content">
 
-          <span class="tag">TABLETOP</span>
+          <div class="loot-label">
+            <span class="loot-symbol">◆</span>
+            <span>TABLETOP</span>
+          </div>
 
           <h3>Dice &amp; Game Night Gear</h3>
 
           <p>
-            Dice, trays, towers, storage, and the little upgrades
-            that make game night better.
+            Premium dice, trays, towers, storage, and the little upgrades
+            that make game night legendary.
           </p>
 
           <a href="#categories" class="text-link">
-            See the loot →
+            See the loot <span>→</span>
           </a>
 
         </div>
@@ -143,13 +146,43 @@
       </article>
 
 
-      <article class="loot-card">
+      <!-- GAMING -->
+      <article class="loot-card gaming-card">
 
-        <div class="loot-art">🎧</div>
+        <div class="loot-image gaming-image">
+
+          <div class="gaming-scene">
+
+            <div class="monitor">
+              <div class="monitor-screen"></div>
+            </div>
+
+            <div class="headset">
+              <div class="ear left-ear"></div>
+              <div class="headband"></div>
+              <div class="ear right-ear"></div>
+            </div>
+
+            <div class="keyboard">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="controller">
+              <span></span>
+              <span></span>
+            </div>
+
+          </div>
+
+        </div>
 
         <div class="loot-content">
 
-          <span class="tag">GAMING</span>
+          <div class="loot-label">
+            <span class="loot-symbol">✦</span>
+            <span>GAMING</span>
+          </div>
 
           <h3>Gaming Setup Finds</h3>
 
@@ -159,7 +192,7 @@
           </p>
 
           <a href="#categories" class="text-link">
-            See the loot →
+            See the loot <span>→</span>
           </a>
 
         </div>
@@ -167,13 +200,38 @@
       </article>
 
 
-      <article class="loot-card">
+      <!-- RPG -->
+      <article class="loot-card rpg-card">
 
-        <div class="loot-art">🧙</div>
+        <div class="loot-image rpg-image">
+
+          <div class="rpg-scene">
+
+            <div class="book book-back"></div>
+            <div class="book book-front"></div>
+
+            <div class="dragon-silhouette">
+              🐉
+            </div>
+
+            <div class="lantern">
+              <span></span>
+            </div>
+
+            <div class="potion">
+              <span></span>
+            </div>
+
+          </div>
+
+        </div>
 
         <div class="loot-content">
 
-          <span class="tag">RPG</span>
+          <div class="loot-label">
+            <span class="loot-symbol">✧</span>
+            <span>RPG</span>
+          </div>
 
           <h3>For Your Next Campaign</h3>
 
@@ -183,7 +241,7 @@
           </p>
 
           <a href="#categories" class="text-link">
-            See the loot →
+            See the loot <span>→</span>
           </a>
 
         </div>
@@ -192,46 +250,72 @@
 
     </div>
 
+
+    <div class="section-transition">
+
+      <span></span>
+      <div>✦</div>
+      <span></span>
+
+    </div>
+
   </section>
 
 
   <!-- CATEGORIES -->
-  <section id="categories" class="section dark-section">
+  <section id="categories" class="section categories-section">
 
-    <div class="section-heading">
+    <div class="section-heading centered">
 
       <p class="eyebrow">OPEN THE CHEST</p>
 
-      <h2>
-        What are you hunting for?
-      </h2>
+      <h2>What are you hunting for?</h2>
+
+      <p>
+        Pick your path. The Mimic has been digging through the hoard.
+      </p>
 
     </div>
 
 
     <div class="category-grid">
 
-      <a href="#loot" class="category">
-        <span class="category-icon">🎲</span>
-        <span>Tabletop &amp; RPG</span>
+      <a href="#loot" class="category-card">
+        <div class="category-icon">◆</div>
+        <div>
+          <strong>Tabletop &amp; RPG</strong>
+          <span>Dice, accessories, campaign gear</span>
+        </div>
         <b>→</b>
       </a>
 
-      <a href="#loot" class="category">
-        <span class="category-icon">🖥️</span>
-        <span>Gaming Setup</span>
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">✦</div>
+        <div>
+          <strong>Gaming Setup</strong>
+          <span>PC, console, desk upgrades</span>
+        </div>
         <b>→</b>
       </a>
 
-      <a href="#loot" class="category">
-        <span class="category-icon">🎧</span>
-        <span>Headsets &amp; Audio</span>
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">◉</div>
+        <div>
+          <strong>Headsets &amp; Audio</strong>
+          <span>Hear every suspicious footstep</span>
+        </div>
         <b>→</b>
       </a>
 
-      <a href="#loot" class="category">
-        <span class="category-icon">🪑</span>
-        <span>Desk &amp; Comfort</span>
+
+      <a href="#loot" class="category-card">
+        <div class="category-icon">▣</div>
+        <div>
+          <strong>Desk &amp; Comfort</strong>
+          <span>Make your gaming lair better</span>
+        </div>
         <b>→</b>
       </a>
 
@@ -243,18 +327,18 @@
   <!-- ABOUT -->
   <section id="about" class="about section">
 
-    <div>
+    <div class="about-heading">
 
       <p class="eyebrow">ABOUT THE MIMIC</p>
 
       <h2>
-        Not everything shiny is treasure.
+        Not everything shiny
+        is treasure.
       </h2>
 
     </div>
 
-
-    <div>
+    <div class="about-copy">
 
       <p>
         It's Probably a Mimic is a gaming discovery brand built for
@@ -276,12 +360,14 @@
 
 <footer>
 
-  <div>
+  <div class="footer-brand">
+
     <strong>It's Probably a Mimic</strong>
 
     <p>
       Your next favorite gaming find might be hiding in here.
     </p>
+
   </div>
 
 
@@ -296,8 +382,7 @@
 
   <p class="disclosure">
     Some links on this site may be affiliate links.
-    If you buy through one, we may earn a commission
-    at no extra cost to you.
+    If you buy through one, we may earn a commission at no extra cost to you.
   </p>
 
 </footer>
