@@ -1791,3 +1791,37 @@ footer {
         flex-wrap: wrap;
     }
 }
+
+
+/* =================================
+   FINDS PAGE — DISPLAY UPLOADED IMAGES
+   Final image override
+================================= */
+
+.finds-page .product-image .product-art-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.finds-page .product-image .product-rarity {
+    z-index: 3;
+}
+
+.finds-page .tabletop-art,
+.finds-page .gaming-art,
+.finds-page .rpg-art {
+    background-image: none;
+}
+
+.finds-page .tabletop-art::before,
+.finds-page .gaming-art::before,
+.finds-page .rpg-art::before {
+    display: none;
+}
